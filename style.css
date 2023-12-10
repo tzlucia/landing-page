@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Covered+By+Your+Grace&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
 :root {
-  --background: rgb(214, 147, 159);
-  --secondary: rgb(199, 242, 255);
-  --tex: rgb(250, 125, 154);
+  --background: rgb(251, 174, 184);
+  --secondary: rgb(103, 199, 210);
+  --tex: rgb(255, 255, 255);
+  --tex2: rgb(238, 130, 143);
+  --tex3: rgb(0, 0, 0);
+  --darkcolor: rgb(66, 135, 151);
 }
 * {
   margin: 0;
@@ -9,8 +15,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "Acme", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Covered By Your Grace", cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 
 header {
@@ -19,6 +27,7 @@ header {
   justify-content: space-around;
   padding: 20px;
   align-items: center;
+  text-align: center;
 }
 
 nav {
@@ -34,5 +43,84 @@ nav {
 
 a {
   color: var(--tex);
-  font-size: 15px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+main {
+  background-color: var(--background);
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--tex2);
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--tex);
+}
+
+.hero-link {
+  background-color: var(--darkcolor);
+  border-radius: 18px;
+  padding: 6px;
+  font-family: "Covered By Your Grace", cursive;
+  color: var(--tex);
+}
+.hero-link2 {
+  background-color: var(--darkcolor);
+  border-radius: 18px;
+  padding: 6px;
+  font-family: "Covered By Your Grace", cursive;
+  color: var(--tex);
+}
+
+.hero-portada img {
+  width: 320px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 0px rgb(34, 34, 34);
+}
+.hero-seccion {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+}
+
+h2 {
+  color: var(--tex3);
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.hero-info-empresa {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  color: var(--tex3);
+  font-size: 18 px;
+  font-family: "Homemade Apple", cursive;
+}
+
+.hero-info-empresa {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+}
+
+.firmateam {
+  font-size: 30px;
+  float: right;
+  color: var(--darkcolor);
 }
