@@ -124,3 +124,7 @@ h3 {
   float: right;
   color: var(--darkcolor);
 }
+.img-logo {
+  width: 75px;
+  height: 75 px;
+}
