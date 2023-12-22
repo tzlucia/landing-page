@@ -61,7 +61,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-p {
+p,
+.info-card p {
   font-size: 24px;
   margin-bottom: 30px;
   color: var(--tex);
@@ -73,6 +74,8 @@ p {
   padding: 6px;
   font-family: "Covered By Your Grace", cursive;
   color: var(--tex);
+  background: radial-gradient(rgb(103, 199, 210), rgb(238, 130, 143));
+  border: 2px;
 }
 .hero-link2 {
   background-color: var(--darkcolor);
@@ -80,6 +83,7 @@ p {
   padding: 6px;
   font-family: "Covered By Your Grace", cursive;
   color: var(--tex);
+  background: radial-gradient(rgb(103, 199, 210), rgb(238, 130, 143));
 }
 
 .hero-portada img {
@@ -127,4 +131,100 @@ h3 {
 .img-logo {
   width: 60px;
   height: 60px;
+}
+.info-card {
+  background-color: var(--secondary);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  flex: 1 1 0;
+  background: linear-gradient(rgb(103, 199, 210), rgb(238, 130, 143));
+}
+.info-card img {
+  width: 95px;
+}
+
+.info-card-conteiner {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.info-card p,
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.contenedor-columnas {
+  display: flex;
+}
+
+.columna {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.izquierda {
+  background-color: var(--darkcolor);
+}
+
+.derecha {
+  background-color: var(--darkcolor);
+  width: 300px;
+  height: auto;
+}
+.mapa img {
+  margin-top: 15px;
+}
+
+.info-contacto a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info-contacto i {
+  margin-right: 10px;
+}
+
+.mapa img {
+  border-radius: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+.info-contacto h2 {
+  font-size: 30px;
+}
+
+.info-contacto {
+  text-align: center;
+}
+body {
+  background-color: var(--background);
+}
+.footer-selection {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--secondary);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
